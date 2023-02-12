@@ -159,7 +159,7 @@ Then, push
 
 ## Step 4: Deploy the application using Docker
 
-Now we will run the container image and view the running container. Once this is done, we verify our deployed python flask app by navigating to **http://localhost:80/** to access your Flask web application on a browser or on the terminal with the **curl** command to see the contents of the webpage.  
+Now we will run the container image and view the running container. Once this is done, we verify our deployed python flask app by navigating to **http://localhost:80/** to access our Flask web application on a browser or on the terminal with the **curl** command to see the contents of the webpage.  
 
               docker run -d -p 80:80 --name flask-web adeola007/dockerize-python-flask-demo:v1
 
@@ -271,7 +271,7 @@ Create a deployment yaml file for our Python flask application:
 ![image](https://user-images.githubusercontent.com/74336816/218293326-32c739ee-b4d2-492c-a8b1-53bdf982292d.png)
 
 
-Here, we are making use of our image pushed to Docker Hub earlier, adeola007/dockerize-python-flask-demo:v1 to deploy the flask app. We are deploying 2 instances of the app to load-balance between them.
+Here, we are making use of our image pushed to Docker Hub earlier, **adeola007/dockerize-python-flask-demo:v1** to deploy the flask app. We are deploying 2 instances of the app to load-balance between them.
 
 Let’s create our deployment from the yaml file and confirm. 2 pods are created.
 
