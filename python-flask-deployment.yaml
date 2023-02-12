@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-web-deployment
+  labels:
+    myapp: app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      myapp: app
+  template:
+    metadata:
+      labels:
+        myapp: app
+    spec:
+      containers:
+      - name: python-flask-web-app
+        image: adeola007/dockerize-python-flask-demo:v1
+        ports:
+        - containerPort: 80
