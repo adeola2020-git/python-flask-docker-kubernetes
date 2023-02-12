@@ -1,4 +1,4 @@
-# Dockerize A Simple Flask App and deploy using Docker Compose and Kubernetes 
+# Dockerize A Simple Python Flask App and deploy using Docker Compose and Kubernetes 
 
 
 In this project, we will dockerize a simple Python Flask application using Flask and docker compose. We will build the docker image from a Dockerfile, and push to a remote repository (Docker hub) – as part of a CI/CD pipeline. 
