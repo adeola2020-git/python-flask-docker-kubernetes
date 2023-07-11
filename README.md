@@ -3,7 +3,7 @@
 
 In this project, we will dockerize a simple Python Flask application using Flask and docker compose. We will build the docker image from a Dockerfile, and push to a remote repository (Docker hub) – as part of a CI/CD pipeline. 
 
-We will use docker compose (an orchestration tool) to manage the container and ensure the container automatically restarts if stopped.
+We will use docker compose (an orchestration tool - makes spinning up multi-container distributed applications with Docker an effortless task) to manage the container and ensure the container automatically restarts if stopped.
 
 Finally, we will deploy 2 instances of our containerized flask app on Kubernetes which helps to scale the application.
 
